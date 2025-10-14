@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="page sur la géographie du Kasaï-Central, incluant sa situation géographique, relief, climat, ressources naturelles et découpage territorial.">
+  <meta name="keywords"
+    content="relief et climat, province du Kasaï-Central, géographie, agriculture, ressources naturelles, hydrographie, découpage territorial">
+  <meta name="author" content="Ir Philippe mirindi lukogo">
+
+  <title>Geographie | kasai-central</title>
+
+  <link rel="shortcut icon" href="images/favicon.jpg">
+  <script src="https://kit.fontawesome.com/3137461f7e.js" crossorigin="anonymous"></script>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <script>
+    const html = document.querySelector('html');
+    const isLightOrAuto = localStorage.getItem('hs_theme') === 'light' || (localStorage.getItem('hs_theme') === 'auto' && !window.matchMedia('(prefers-color-scheme: dark)').matches);
+    const isDarkOrAuto = localStorage.getItem('hs_theme') === 'dark' || (localStorage.getItem('hs_theme') === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+    if (isLightOrAuto && html.classList.contains('dark')) html.classList.remove('dark');
+    else if (isDarkOrAuto && html.classList.contains('light')) html.classList.remove('light');
+    else if (isDarkOrAuto && !html.classList.contains('dark')) html.classList.add('dark');
+    else if (isLightOrAuto && !html.classList.contains('light')) html.classList.add('light');
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+          ScrollReveal().reveal('section:not(footer section), .bg-white:not(footer .bg-white), .rounded-xl:not(footer .rounded-xl), .rounded-lg:not(footer .rounded-lg), .prose > p:not(footer .prose > p), table:not(footer table), h1:not(footer h1), h2:not(footer h2), h3:not(footer h3), h4:not(footer h4), h5:not(footer h5), h6:not(footer h6)', {
+      delay: 100,
+      distance: '40px',
+      origin: 'bottom',
+      opacity: 0,
+      duration: 800,
+      interval: 100,
+      easing: 'ease-out',
+      reset: false
+    });
+  });
+  
+  </script>
+  <link rel="stylesheet" href="https://preline.co/assets/css/main.css?v=3.1.0">
+  <script src="https://kit.fontawesome.com/3137461f7e.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:wght@300..700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:wght@300..700&display=swap"
+    rel="stylesheet">
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<style>
+  #cartes article {
+    background: none;
+  }
+
+  #cartes .w-full {
+    width: 100%;
+    height: 100%;
+  }
+          .section-title {
+            background: linear-gradient(to right, #1e3a8a, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+</style>
+
+<body class="relative p-0 m-0 overflow-x-hidden" style="font-family: 'Nunito', sans-serif;">
+
+
+  <header class="w-full relative bg-blue-600 min-h-64 max-h-64 flex items-center justify-center"
+    style="background-image: url(images/bg/monoc1.jpg); background-size: cover; background-repeat: no-repeat; font-family: 'Nunito' sans-serif;">
+    <div class="ovelay absolute w-full h-full z-10" style="background-color : #001060af;"></div>
+        <a href="index.php" class="text-white absolute top-5 right-5 z-30 p-10 text-blue-600 font-bold" style="color: rgb(255, 255, 255);"><i class="fa-solid fa-arrow-left p-2 bg-blue-600 text-white rounded-lg "></i> <span class="hidden sm:inline">Retour à l'accueil</span></a>
+
+    <h1 class="text-center text-2xl md:text-4xl text-white font-bold text-shadow-lg z-30"><i
+        class="fa-solid fa-earth-africa"></i> Géographie du kasai-central</h1>
+  </header>
+
+  <section class="">
+    <h1 class="text-center font-bold">Basculez</h1>
+    <nav class="flex gap-x-1 mt-3 bg-white p-2 justify-center" aria-label="Tabs" role="tablist"
+      aria-orientation="horizontal">
+      <div class="bg-blue-600 rounded-full flex items-center justify-center gap-x-1">
+        <button type="button" id="general"
+          class="hs-tab-active:bg-white hs-tab-active:text-blue-600 hs-tab-active:text-blue-700 border-2 border-transparent hs-tab-active:border-blue-700 hs-tab-active:dark:text-white py-3 px-4 inline-flex items-center gap-x-2 bg-transparent text-sm font-medium text-center text-white focus:outline-hidden focus:text-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:text-neutral-300 rounded-full active"
+          id="pills-with-brand-color-item-1" aria-selected="true" data-hs-tab="#pills-with-brand-color-1"
+          aria-controls="pills-with-brand-color-1" role="tab">
+          Généralités
+        </button>
+        <button type="button" id="carto"
+          class="hs-tab-active:bg-white hs-tab-active:text-blue-600 border-2 border-transparent hs-tab-active:border-blue-700  hs-tab-active:dark:text-white py-3 px-4 inline-flex items-center gap-x-2 bg-transparent text-sm font-medium text-center text-white focus:outline-hidden  disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:text-neutral-300 rounded-full"
+          id="pills-with-brand-color-item-2" aria-selected="false" data-hs-tab="#pills-with-brand-color-2"
+          aria-controls="pills-with-brand-color-2" role="tab">
+          Cartographie
+        </button>
+      </div>
+
+    </nav>
+
+    <div class="">
+      <div id="pills-with-brand-color-1" role="tabpanel" aria-labelledby="pills-with-brand-color-item-1">
+
+        <section id="reliefs" class="w-full bg-gray-100 rounded-lg p-4 sm:p-8">
+          <section id="situation" style="font-family: 'Nunito', sans-serif;">
+            <h1 class="text-lg font-bold"><i class="fa-solid fa-caret-right mr-8"></i> Situation géographique</h1>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 mt-3 gap-4 bg-white justify-around p-4 rounded-xl">
+  
+  
+  <div class="bg-gradient-to-br from-amber-50 to-yellow-100 border-l-4 border-yellow-500 rounded-lg p-4 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1" 
+       role="alert" tabindex="-1" aria-labelledby="afrique-label">
+    <div class="flex items-start space-x-3">
+      <div class="flex-shrink-0 w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center shadow-md">
+        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="flex-1 min-w-0">
+        <h3 id="afrique-label" class="text-lg font-semibold text-gray-800 mb-1">
+          Afrique
+        </h3>
+        <p class="text-sm text-gray-600 font-medium">
+          Continent
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="bg-gradient-to-br from-emerald-50 to-green-100 border-l-4 border-green-500 rounded-lg p-4 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1" 
+       role="alert" tabindex="-1" aria-labelledby="congo-label">
+    <div class="flex items-start space-x-3">
+      <div class="flex-shrink-0 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center shadow-md">
+        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+          <path fill-rule="evenodd" d="M3 8a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+          <path fill-rule="evenodd" d="M3 12a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="flex-1 min-w-0">
+        <h3 id="congo-label" class="text-lg font-semibold text-gray-800 mb-1">
+          RD Congo
+        </h3>
+        <p class="text-sm text-gray-600 font-medium">
+          Pays
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="bg-gradient-to-br from-blue-50 to-indigo-100 border-l-4 border-blue-500 rounded-lg p-4 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1" 
+       role="alert" tabindex="-1" aria-labelledby="location-label">
+    <div class="flex items-start space-x-3">
+      <div class="flex-shrink-0 w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
+        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="flex-1 min-w-0">
+        <h3 id="location-label" class="text-lg font-semibold text-gray-800 mb-1">
+          5°54′00″
+        </h3>
+        <p class="text-sm text-gray-600 font-medium">
+          Localisation de la province
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="bg-gradient-to-br from-purple-50 to-violet-100 border-l-4 border-purple-500 rounded-lg p-4 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1" 
+       role="alert" tabindex="-1" aria-labelledby="surface-label">
+    <div class="flex items-start space-x-3">
+      <div class="flex-shrink-0 w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center shadow-md">
+        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="flex-1 min-w-0">
+        <h3 id="surface-label" class="text-lg font-semibold text-gray-800 mb-1">
+          59,111 km²
+        </h3>
+        <p class="text-sm text-gray-600 font-medium">
+          Superficie
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="bg-gradient-to-br from-rose-50 to-pink-100 border-l-4 border-rose-500 rounded-lg p-4 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1" 
+       role="alert" tabindex="-1" aria-labelledby="population-label">
+    <div class="flex items-start space-x-3">
+      <div class="flex-shrink-0 w-10 h-10 bg-rose-500 rounded-full flex items-center justify-center shadow-md">
+        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+        </svg>
+      </div>
+      <div class="flex-1 min-w-0">
+        <h3 id="population-label" class="text-lg font-semibold text-gray-800 mb-1">
+          5,089,998 hab
+        </h3>
+        <p class="text-sm text-gray-600 font-medium">
+          Population
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+            <p class="p-2 sm:p-8 text-sm">La province du <span class="font-bold"> Kasaï central</span> est située au Centre-Sud
+              du Pays et limitée au nord par la Province de Sankuru, au Sud par la Province Angolaise de Lunda Nord et
+              de la Province de Lualaba, à l’Est par la Province du Kasaï Oriental et à l’Ouest par la Province du
+              Kasaï. Sa latitude est de <span class="font-bold"> 2°-8° au Sud </span>et sa longitude <span
+                class="font-bold">24° à l’Est</span> .</p>
+            <section id="relief" class="relative bg-white rounded-lg py-12 px-4 sm:px-6 lg:px-8">
+
+              <div class="relative z-20 max-w-7xl mx-auto">
+              <div class="absolute w-full h-full z-0">
+                <img src="images/bg/bgsvg.svg" alt="" class="absolute right-0 top-0 opacity-10">
+              </div>
+                <h1
+                  class="text-3xl z-10 relative sm:text-4xl font-bold section-title text-center p-8">
+                  Relief et Climat
+                </h1>
+                <div class="prose prose-lg text-gray-700 max-w-prose font-semibold relative z-20">
+                  <p class="mb-4 font-semibold">
+                    Le <span class="font-bold text-blue-600">Kasaï Central</span> dispose de sols sablo-argileux,
+                    sablonneux et ferralitiques, adaptés par endroits à l’agriculture tropicale, favorisant une
+                    végétation diversifiée. Le territoire de Demba, grâce à ses sols forestiers de qualité, est une zone
+                    à forte production agricole. À Luiza, les sols argileux offrent d’importantes potentialités
+                    agricoles. La province se divise en deux <span class="font-bold text-blue-600">zones
+                      agro-écologiques</span> :
+                  </p>
+                  <ul class="pl-6 mb-4">
+                    <li><span class="size-2 inline-block bg-blue-600 rounded-full me-2"></span><span
+                        class="font-bold text-blue-600">La zone Nord</span>, forestière, propice aux cultures
+                      industrielles et vivrières.</li>
+                    <li><span class="size-2 inline-block bg-blue-600 rounded-full me-2"></span><span
+                        class="font-bold text-blue-600">La zone Sud</span>, constituée de savanes, dédiée à
+                      l’agropastoralisme.</li>
+                  </ul>
+                  <p class="mb-4">
+                    Le climat du Kasaï Central est <span class="font-semibold text-blue-600">tropical, chaud et
+                      humide</span> , avec une alternance de deux saisons : la saison des <span
+                      class="font-bold text-blue-600">pluies</span> et la saison <span
+                      class="font-bold text-blue-600">sèche</span>.
+                  </p>
+                  <p class="mb-4">
+                    Le relief, peu varié, est dominé par des <span class="font-bold text-blue-600">plateaux
+                      d’altitudes</span> comprises entre <span class="font-bold text-blue-600">500 et 1 000 m</span>. Le
+                    sous-sol, principalement granitique, présente des affleurements exploités en carrières. La province
+                    regorge de ressources minières, notamment :
+                  </p>
+                  <ul class=" pl-6 mb-4">
+                    <li><span class="size-2 inline-block bg-blue-600 rounded-full me-2"></span><span
+                        class="font-bold text-blue-600">Diamant</span> dans les territoires de Demba, Kazumba et
+                      Dimbelenge.</li>
+                    <li><span class="size-2 inline-block bg-blue-600 rounded-full me-2"></span><span
+                        class="font-bold text-blue-600">Or</span> dans le territoire de Luiza et le sud de Dibaya.</li>
+                    <li><span class="size-2 inline-block bg-blue-600 rounded-full me-2"></span><span
+                        class="font-bold text-blue-600">Nickel, chrome et cobalt</span> à Kananga et Kazumba.</li>
+                  </ul>
+                  <p class="mb-4">
+                    <span class="font-bold text-blue-600">L’hydrographie est abondante</span>, offrant des opportunités
+                    pour l’eau potable, la production d’électricité, la navigation, la pêche et l’irrigation.<span
+                      class="font-bold text-blue-600">La rivière Kasaï</span> , alimentée par des affluents majeurs
+                    comme la Lulua, la Lukenie, le Sankuru, la Tshikapa et la Loangotshimo, est le principal cours
+                    d’eau. La province compte également deux lacs principaux : <span
+                      class="font-bold text-blue-600">Munkamba et Fwa</span>, situés dans le territoire de Dimbelenge.
+                  </p>
+                  <p class="mb-4">
+                    Les algues (Nzaula), présentes dans les rivières et lacs, constituent une source riche en <span
+                      class="font-bold text-blue-600"> protéines végétales</span>. Cependant, ces potentialités restent
+                    sous-exploitées en raison de faiblesses dans la gouvernance et les capacités managériales locales.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section id="decoupage" class="bg-white rounded-lg py-12 px-4 sm:px-6 lg:px-8 rounded-lg">
+              <div class="relative max-w-7xl mx-auto">
+              <div class="absolute w-full h-full z-0">
+                <img src="images/bg/bgsvg.svg" alt="" class="absolute right-0 top-0 opacity-10">
+              </div>
+                <h1
+                  class="text-3xl relative z-10 sm:text-4xl font-bold section-title text-center p-8">
+                  Découpage Territorial
+                </h1>
+                <div class="prose prose-lg relative z-10 text-gray-700 max-w-prose font-bold">
+                  <p class="mb-4 font-semibold">
+                    La province du <span class="font-bold text-blue-600"> Kasaï-Central </span>est composée de 5
+                    territoires : <span class="font-bold text-blue-600">Demba, Dibaya, Dimbelenge, Kazumba et
+                      Luiza</span> , avec la ville de <span class="font-bold text-blue-600"> Kananga </span> comme
+                    chef-lieu.
+                  </p>
+                  <p class="mb-4 font-bold text-blue-600">
+                    La ville de Kananga est subdivisée en 5 communes :
+                  </p>
+                  <ul class="pl-6 mb-4 flex gap-4 flex-wrap">
+                    <li><span class="size-2 inline-block bg-blue-600 text-xs rounded-full me-2"></span>Kananga</li>
+                    <li><span class="size-2 inline-block bg-blue-600 text-sm rounded-full me-2"></span>Katoka</li>
+                    <li><span class="size-2 inline-block bg-blue-600 text-sm rounded-full me-2"></span>Lukonga</li>
+                    <li><span class="size-2 inline-block bg-blue-600 text-sm rounded-full me-2"></span>Ndesha</li>
+                    <li><span class="size-2 inline-block bg-blue-600 text-sm rounded-full me-2"></span>Nganza</li>
+                  </ul>
+                  <p class="mb-4 font-semibold">
+                    Ces communes regroupent un total de <span class="font-bold text-blue-600"> 27 quartiers</span>. À
+                    l’échelle de la province, on dénombre :
+                  </p>
+                  <ul class="pl-6 mb-4 flex gap-4 flex-wrap">
+                    <li><span class="size-2 inline-block bg-blue-600 rounded-full me-2"></span>33 secteurs</li>
+                    <li><span class="size-2 inline-block bg-blue-600 rounded-full me-2"></span>492 groupements</li>
+                    <li><span class="size-2 inline-block bg-blue-600 rounded-full me-2"></span>4 994 villages</li>
+                  </ul>
+
+                  <div class="max-w-7xl mx-auto">
+                    <div class="flex flex-col">
+                      <div class="-m-1.5 overflow-x-auto">
+                        <div class="p-1.5 min-w-full inline-block align-middle">
+                          <div class="border border-blue-600 rounded-lg overflow-hidden dark:border-neutral-700">
+                            <table class="min-w-full divide-y divide-gray-200 dark:divide-neutral-700">
+                              <thead class="bg-gray-100 dark:bg-neutral-800">
+                                <tr>
+                                  <th scope="col"
+                                    class="px-6 py-3 text-start text-xs font-bold text-gray-500 uppercase dark:text-neutral-400">
+                                    Subdivision</th>
+                                  <th scope="col"
+                                    class="px-6 py-3 text-start text-xs font-bold text-gray-500 uppercase dark:text-neutral-400">
+                                    Chef-lieu</th>
+                                  <th scope="col"
+                                    class="px-6 py-3 text-start text-xs font-bold text-gray-500 uppercase dark:text-neutral-400">
+                                    Superficie (Km²)</th>
+                                  <th scope="col"
+                                    class="px-6 py-3 text-start text-xs font-bold text-gray-500 uppercase dark:text-neutral-400">
+                                    Population</th>
+                                  <th scope="col"
+                                    class="px-6 py-3 text-start text-xs font-bold text-gray-500 uppercase dark:text-neutral-400">
+                                    Secteurs/Communes</th>
+                                </tr>
+                              </thead>
+                              <tbody class="divide-y divide-gray-200 dark:divide-neutral-700">
+                                <tr class="hover:bg-gray-50 dark:hover:bg-neutral-700">
+                                  <td
+                                    class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-800 dark:text-neutral-200">
+                                    Kananga</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                                    Kananga</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">8
+                                    825</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">1
+                                    225 370</td>
+                                  <td class="px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Kananga, Katoka,
+                                    Lukonga, Ndesha, Nganza</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 dark:hover:bg-neutral-700">
+                                  <td
+                                    class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-800 dark:text-neutral-200">
+                                    Demba</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                                    Demba</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                                    847</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                                    726 549</td>
+                                  <td class="px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Diofwa, Mamba,
+                                    Lombelo, Lusonge, Muanza Ngoma, Tshibungu</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 dark:hover:bg-neutral-700">
+                                  <td
+                                    class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-800 dark:text-neutral-200">
+                                    Dibaya</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                                    Dibaya</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">8
+                                    601</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                                    687 905</td>
+                                  <td class="px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Dibatayi, Dibanda,
+                                    Kamuandu, Kasangidi, Tshishilu</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 dark:hover:bg-neutral-700">
+                                  <td
+                                    class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-800 dark:text-neutral-200">
+                                    Dimbelenge</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                                    Dimbelenge</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">13
+                                    223</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                                    541 048</td>
+                                  <td class="px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Lubi, Lubudi,
+                                    Lukibu, Kunduyi, Mashala</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 dark:hover:bg-neutral-700">
+                                  <td
+                                    class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-800 dark:text-neutral-200">
+                                    Kazumba</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                                    Kazumba</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">12
+                                    881</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">1
+                                    031 855</td>
+                                  <td class="px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Matamba, Miao,
+                                    Kafuba, Musuasua, Mboyi, Mbulungu, Tshitadi, Kavula, Mutefu</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50 dark:hover:bg-neutral-700">
+                                  <td
+                                    class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-800 dark:text-neutral-200">
+                                    Luiza</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                                    Luiza</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">14
+                                    702</td>
+                                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                                    877 271</td>
+                                  <td class="px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Kalunga, Lueta,
+                                    Kabelekese, Lusanza, Bambayi, Luatshi, Mbushimai</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="richesses"
+              class="bg-gradient-to-br from-emerald-50 to-green-100 py-16  sm:px-6 lg:px-8 rounded-2xl">
+              <div class="max-w-7xl mx-auto">
+                <h1
+                  class="text-3xl sm:text-4xl font-bold section-title text-center p-8">
+                  Richesses Économiques
+                </h1>
+
+                <div class="grid lg:grid-cols-2 gap-6 lg:gap-8 mx-auto max-w-7xl mb-12 sm:px-6 lg:px-8">
+  
+  <div class="bg-white rounded-2xl p-4 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div class="flex items-center mb-5">
+      <h2 class="text-2xl font-semibold text-gray-900">Ressources Minières</h2>
+    </div>
+    <p class="text-gray-600 text-base mb-6 leading-relaxed">
+      Le Kasaï-Central dispose d'importantes ressources minières, notamment le diamant concentré dans plusieurs territoires stratégiques.
+    </p>
+    <div class="space-y-4">
+      <div class="flex items-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors duration-200">
+        <span class="font-medium text-gray-800">Diamant - Territoires de Demba, Kazumba et Dimbelenge</span>
+      </div>
+      <div class="flex items-center p-4 bg-yellow-50 rounded-lg hover:bg-yellow-100 transition-colors duration-200">
+        <span class="font-medium text-gray-800">Or - Territoire de Luiza et sud de Dibaya</span>
+      </div>
+      <div class="flex items-center p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors duration-200">
+        <span class="font-medium text-gray-800">Nickel, Chrome, Cobalt - Kananga et Kazumba</span>
+      </div>
+    </div>
+    <div class="mt-6 h-48 rounded-lg overflow-hidden border border-gray-200">
+      <img src="images/bg/mine.png" alt="Mining resources" class="object-cover w-full h-full">
+    </div>
+  </div>
+
+  
+  <div class="bg-white rounded-2xl p-4 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div class="flex items-center mb-5">
+      <h2 class="text-2xl font-semibold text-gray-900">Agriculture & Terres Arables</h2>
+    </div>
+    <p class="text-gray-600 text-base mb-6 leading-relaxed">
+      La province possède des terres arables de bonne qualité avec un sol très fertile pouvant produire en quantité légumes, manioc et maïs.
+    </p>
+    <div class="grid grid-cols-2 gap-4 mb-6">
+      <div class="text-center p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors duration-200">
+        <p class="font-medium text-sm text-gray-800">Cultures Vivrières</p>
+      </div>
+      <div class="text-center p-4 bg-orange-50 rounded-lg hover:bg-orange-100 transition-colors duration-200">
+        <p class="font-medium text-sm text-gray-800">Cultures Industrielles</p>
+      </div>
+    </div>
+    <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+      Deux zones agro-écologiques : zone Nord forestière favorable aux cultures industrielles et vivrières, zone Sud des savanes à vocation agropastorale.
+    </p>
+    <div class="h-48 rounded-lg overflow-hidden border border-gray-200">
+      <img src="images/bg/agri.png" alt="Agricultural fields" class="object-cover w-full h-full">
+    </div>
+  </div>
+</div>
+
+
+<div class="bg-white rounded-2xl p-6 sm:p-8 mx-auto max-w-7xl mb-12 shadow-lg px-4 sm:px-6 lg:px-8">
+  <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+    
+    <div class="text-center group">
+      <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+        <i class="fa-solid fa-water text-blue-600 text-xl"></i>
+      </div>
+      <h3 class="font-semibold text-lg text-gray-900 mb-2">Ressources Hydriques</h3>
+      <p class="text-gray-600 text-sm leading-relaxed mb-4">
+        Importantes ressources en eaux avec la rivière Kasaï et ses affluents, offrant des opportunités pour l'irrigation, la pêche et la production d'électricité.
+      </p>
+      <div class="h-64 rounded-lg overflow-hidden border border-gray-200">
+        <img src="images/bg/lac.webp" alt="Water resources" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105">
+      </div>
+    </div>
+
+    
+    <div class="text-center group">
+      <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+        <i class="fa-solid fa-tree text-green-600 text-xl"></i>
+      </div>
+      <h3 class="font-semibold text-lg text-gray-900 mb-2">Ressources Forestières</h3>
+      <p class="text-gray-600 text-sm leading-relaxed mb-4">
+        La forêt constitue l'une des plus importantes ressources de la province, particulièrement dans la zone Nord, offrant un potentiel économique considérable.
+      </p>
+      <div class="h-64 rounded-lg overflow-hidden border border-gray-200">
+        <img src="images/bg/foret.jpg" alt="Forest resources" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105">
+      </div>
+    </div>
+
+    
+    <div class="text-center group">
+      <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+        <i class="fa-solid fa-fish text-amber-600 text-xl"></i>
+      </div>
+      <h3 class="font-semibold text-lg text-gray-900 mb-2">Ressources Halieutiques</h3>
+      <p class="text-gray-600 text-sm leading-relaxed mb-4">
+        Les lacs Munkamba et Fwa, ainsi que les nombreuses rivières, offrent un potentiel important pour la pêche et l'aquaculture.
+      </p>
+      <div class="h-64 rounded-lg overflow-hidden border border-gray-200">
+        <img src="images/bg/Caisse-poissons.jpg" alt="Fisheries resources" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105">
+      </div>
+    </div>
+  </div>
+</div>
+                
+              </div>
+            </section>
+      </div>
+      <div id="pills-with-brand-color-2" class="hidden w-full p-8 mb-3" style="background-color: #303030; min-height: 90vh; font-family: 'Nunito', sans-serif;" role="tabpanel" aria-labelledby="pills-with-brand-color-item-2">
+    <div>
+        <h1 class="text-3xl font-bold text-white mb-4">Cartographie du Kasaï-Central</h1>
+        <p class="text-white mb-6">Explorez la province du Kasaï-Central à travers cette carte interactive. Survolez ou cliquez sur les différentes zones pour en savoir plus.</p>
+    </div>
+    <hr class="border-gray-100 dark:border-white">
+    <hr>
+    <br>
+    <br>
+    
+    <div class="flex flex-col gap-4 md:flex-row md:gap-8" style="font-family: 'Nunito', sans-serif;">
+        <div class="w-full md:w-auto flex justify-center items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 363.12 698.61" class="w-full max-w-sm h-auto">
+                <style>
+                    .mono-path {
+                        fill: #b0b0b0;
+                        stroke: #333;
+                        stroke-width: 2;
+                        stroke-miterlimit: 10;
+                    }
+    
+                    .mono-path:hover {
+                        fill: #eac300;
+                        cursor: pointer;
+                    }
+    
+                    .path-badge {
+                        pointer-events: none;
+                    }
+    
+                    .badge-ping {
+                        animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+                    }
+    
+                    @keyframes ping {
+                        75%,
+                        100% {
+                            transform: scale(2);
+                            opacity: 0;
+                        }
+                    }
+    
+                        .mono-path-hover {
+                        fill: #eac300 !important;
+                        filter: brightness(1.1);
+                        transition: fill 0.2s;
+                    }
+                </style>
+                <g>
+                    <polygon class="mono-path" id="demba" points="150.75 84.4 154.19 81.88 158.32 81.88 161.3 81.88 163.13 81.88 164.28 83.14 165.42 86.23 165.42 87.84 164.28 90.59 163.36 93.57 163.13 99.76 162.67 102.28 159.46 105.5 150.75 116.27 147.08 121.32 147.08 123.84 147.08 127.97 147.08 130.49 149.6 133.01 155.34 135.76 162.67 138.97 166.34 141.5 166.34 146.77 164.97 151.58 163.82 161.21 162.21 169.7 161.99 173.14 163.36 174.06 169.32 175.2 173.22 182.77 184 195.38 187.9 204.09 195.69 211.66 198.21 214.87 200.97 220.6 204.41 225.19 206.7 229.09 208.13 234.36 209.45 240.09 210.6 242.16 212.89 242.16 217.02 245.14 218.85 252.93 221.14 259.81 222.29 264.4 223.67 267.61 223.67 273.11 220.46 275.86 219.08 278.62 218.85 284.81 220 289.16 220 295.36 219.77 297.65 218.39 298.79 216.1 298.79 214.72 296.27 208.13 297.65 203.95 300.86 199.82 300.86 197.99 302.46 192.71 296.04 190.42 293.98 189.04 296.96 183.54 302.46 181.47 305.44 180.56 308.19 169.78 308.19 166.57 301.77 162.67 302.23 160.15 299.94 158.78 299.94 154.42 303.84 151.44 304.07 147.08 308.19 142.95 309.34 133.55 309.34 130.8 313.24 127.59 313.24 122.55 305.21 115.44 296.27 111.08 287.79 109.7 286.41 104.66 287.1 100.53 288.93 97.09 292.37 93.88 293.29 88.38 291.46 85.17 290.77 86.78 279.76 89.07 271.28 88.61 265.32 85.17 260.5 82.88 254.54 77.37 246.74 72.33 239.86 70.27 234.82 68.89 231.84 67.06 231.84 64.07 234.59 64.07 237.57 61.32 240.32 55.82 240.78 52.84 235.28 45.04 231.38 43.21 228.63 40.46 228.63 38.62 224.96 40.69 221.98 40.23 214.87 37.25 214.18 35.41 212.12 37.48 201.11 37.48 195.84 40.46 188.96 41.37 183.46 42.75 179.1 45.04 175.66 45.04 167.63 45.27 163.74 46.42 163.28 48.48 163.51 51.92 163.97 54.67 165.57 56.74 166.95 59.72 168.09 62.47 167.86 63.62 163.74 64.3 158.92 67.28 157.55 71.87 156.63 74.39 156.86 74.39 160.99 74.16 163.74 80.58 166.72 84.94 168.09 89.3 167.86 91.82 165.34 95.95 166.72 96.64 168.55 97.55 173.14 97.55 177.95 100.99 175.66 104.66 172.22 108.56 162.36 112 154.56 111.54 147.46 108.1 145.85 108.1 139.89 110.16 136.68 106.04 132.55 105.35 130.72 107.18 127.74 110.16 124.98 111.31 122.46 112.92 120.63 117.04 120.63 120.71 117.65 125.07 113.06 128.05 110.08 125.53 103.2 124.61 99.3 127.36 98.62 129.54 97.7 131.72 94.95 131.72 91.97 134.01 88.53 136.53 85.32 136.99 81.88 139.06 81.88 140.43 83.71 144.33 83.71 147.54 84.63 150.75 84.4" />
+    
+    
+                    <path class="mono-path" id="dimbelenge" d="M158.32,81.88l4.05-15.37,2.14-6.42,8-8,2.44-9.47V11.79l-1.53-6.12V1.09l4.28,3.67,10.4,3.66,6.11,4.9,6.42,10.39,5.2,6.12,4.59,8.25,8.25,9.48,3.06,7,6.42,4.59,3.06,2.75,8.25.92,8.26.61,7-1.23,4.89,2.45,2.75,4.59,4.89,14.67,4.59,15.59,4,6.12v3.67l-1.22,4-3.67,1.22h-1.53l-4.28,1.84-4,2.14-8.56,4.58-7.65,4-5.5,2.14L237,134.08l-.62,3.67H240l2.45,1.53-.31,2.75-7,5.5L233,153.65v4.58l3.67,2.14h3.06l5.5,7.65,8.87,11,10.7,13.76,5.81,6.73,2.14,7.64,3.05,4.59,8.87-6.12,7-4,6.73-2.14,6.11.91,4.28-1.22,2.45-1.64,4,8.37v4l10.09,1.84,4,4,4.58,1.22,7.95,2.14h11.62l3.36,3.67V242l1.84,9.18v9.17l1.53,6.42,2.44,2.75v3.06H350.7l-7.95,5.5-6.42,5.5H323.79l-1.83,7L319.51,294H313.7L311,297.65l-3.05,2.14-.62-5.51,4.28-7.33-4,1.22-7,1.83-5.81.31-3.67,2.45-6.42-.92h-8l-4.59.3-4.58-1.83H259l1.49,3.36V297l-1.8,2.75H247.36l-4.59,2.14-3.05,6.42v3.06H229l-1.84-1.84h-6.11l-4,1.84-9,1.83-3-1.22-1.53,1.22h-5.2L198,302.46l6-1.6,4.17-3.21,6.6-1.38,3.67,2.52,1.61-5.12-.54-6.54s-1.76-5.76-.38-8.51,1.68-1.46,1.68-1.46l2.91-6.11-1.38-6.65-3.76-12.82-3.87-8.14-4.06-1.28-2.48-7.8L201,220.6l-10.2-13.72L184,195.38l-8.66-10.14L171.78,180s3.5-3.63-2.46-4.78l-6-1.14.46-12.85,1.15-9.63,1.37-4.81v-5.28l-11-5.73L149.6,133l-2.52-5v-6.65l3.67-5,8.71-10.78,3.21-3.21.69-8.71,2.06-5.73-2.29-6Z" />
+    
+    
+                    <path class="mono-path" id="kananga" d="M180.56,308.2l6.11-8.87,3.75-5.35,7.56,8.48v8H187.44s-5.51-8.26-4,2.75v19.87l-2.9,3.37,1.37,3.36s2.76-3.06,2.76,2.75v5.81h-2.45l-7-6.42h-7l-7-.31-6.72,6.73-3.67-9.78s.3-5.51-7-12.23l-7.34-6.73-6.84-4,1.26-2.45,2.75-3.9H143l4.13-1.14,4.36-4.13,7.33-4.13h1.38l6.42,1.84,3.21,6.42Z" />
+    
+    
+                    <path class="mono-path" id="dibaya" d="M183.46,313.24s-1.69-4.93,0-5.12l1.7-.2,2.28,2.57s2.9.18,6.72.09l3.82-.09.46,2.75s-5.19-.61,6.73-1.22l11.92-.61,10.09-1.84,1.84,1.84h10.7a21.84,21.84,0,0,1,3.67,6.72l.91,3.36-3.05,6.12-1.23,5.5.31,5.2,1.83,6.73-1.22,6.11,1.22,4.59,5.51,4.28,1.22,13.45a34.18,34.18,0,0,1,6,0c2.6.31,4.13,3.06,4.13,3.06v3.05l-2.45,3.67-.3,8.87v11.31l2.75,4.28h5.2l3.66,1.53V431l-3,11.31-5.51,19.87-5.8,19.26-2.76,6.42,4.13,3.37,2.6,5.81,1.83,4.89,8.56.91,4.28,4.28,3.06,4.28,6.73,3.37h8.86v5.2L288,522.06l-9.47-1.84-2.76-2.14h-5.5l-2.45-5.81-5.8-4s-3.37.91-4.28,0l-.92-.92s-4-4.28-4-.31v4l-4.58,3.36s-.92-.3-1.84,3.37l-.91,3.66-3.37.62-.3-4s.91-7.64-1.23-7.64h-2.14L236.74,512h-9l-4.12-.31-10.25-4.89-9.78-4-.61-5.5s-.92-7-2.75-6.42l-1.84.61s7,4.28-.46,2.45-4.43-.31-7.49-1.84l-3.05-1.53-4.73-3.36-4.14.31V475.89s.92-4-2.14-4h-3.06l-5.19.61v-7s1.52-5.19,0-8.25-.31,3.06-1.53-3.06l-1.23-6.11-1.66-4.28-4.14-7.34-1.53-5.2v-6.42l-2.45-5.2v-6.72l6.12-7,2-6.73L167,388.76V382l-1.83-5.81s-2.45,0-3.06-4l-.61-4-3.06-3.16s-.91,4.68-2.75-2.5l-1.83-7.18.61-7,3.21-3.21,3.51-3.52,7,.31h7l7,6.42h2.45v-5.81l-2.76-2.75-1.37-3.36,2.9-3.37Z" />
+    
+    
+                    <path class="mono-path" id="kazumba" d="M74,304.07s5.81-11.24,10.09-11.93l4.28-.68,5.5,1.83,6.65-4.36,9.17-2.52s-1.37.92,5.74,9.86l7.11,8.94,5,8,8.79,6.42,7.34,6.73,7,12.23,3.67,9.78-.61,7,1.83,7.18,2.75,2.5,3.06,3.16,3.67,8L167,382l-.48,8.29-2.71,8.83-2,6.73-6.12,7v6.72l2.45,5.2v6.42l1.53,5.2-3.06,5.81-2.75,11.62-2.14,5.81-.92,8.25,3.06,2.45,2.14,3.67-.31,4.89L152,482l.61,4.59v8.87s.92,1.53-.91,5.5-1.23,3.36-4.59,4.28,4,.92-3.36.92h-9.48l-3.36,6.42-3.67-1.23-4-.61-2.75-.3,1.22,7.34,3.37,5.5,4.47,1.53,2.25,6.11v4.59l-3.67,7L118,544.68s-.92,2.45-5.51,0L108,542.23l-8,.62-4.59,1.22H86.85l-1.22-1.53-2.45-1.84-1.83.92s2.75,1.23-3.37,1.23H71.87l-5.81,2.92-5.5,2-9.79-2.45-9.17-.61L35.41,541l-10.32-9.78-8.25-14.68-4.59-5.81-8.56-7.95L.94,499.13v-2.76s-2.75,2.14,5.5-2.75l8.26-4.89,6.72-4.28H25.7s-.3,6.42,2.76,2.45,4.28,1.22,3.05-4l-1.22-5.2,3.06-4.28.61-4.28s1.53-.61,5.81-2.14l4.28-1.53h2.44l-3.66-4-7.42-7.95-2.67-5.5L31.21,442l-3.37,4.59-3.36,2.75s-3.06,0-1.22-3.36l1.83-3.37.61-2.44-4.28-3.06-.3-4,4-1.53,6.42-.61.31-9.79s3.06-2.75,2.14-11.61L33,400.68l-3.67-8.26.31-8.86v-7l-1.53-11.42-.92-11.21V343.51l.31-5.81,2.14-3.36,9.17-8.56s-1.53-1.84,1.53-8.26l3.06-6.42,1.83-5.81,4-4.28L52.91,298l1.23,4.59,4.28,3.67,4.28,7,3.67,2.45H70l3.36-.31-.31-4Z" />
+    
+    
+                    <path class="mono-path" id="luiza" d="M159.62,436.45s4.58,5.5,5.8,11.62l1.23,6.11,1.53,3.06v15.29l5.19-.61s.92-4,3.06,0l2.14,4v11.62l4.14-.31,7.78,4.89,7.49,1.84,2.3-3.06,2.75,6.42.61,5.5,9.78,4,10.25,4.89,13.07.31,3.89-1.53,1.23,7.64.3,4,3.37-.62,2.75-7,4.58-3.36s-1.59-2.44,0-4,4,.31,4,.31l5.2.92,5.8,4,2.45,5.81h5.5l12.23,4V527s-2.44-1.23-2.44,2.75v4s3.36.61,2.44,2.45l-.91,1.83-3.37,3.67s-1.83,3.67-1.53,11.93l.31,8.25s1.22,3.67.61,18.34l-.61,14.68,2.14,1.83,1.53,6.42-3.36,5.51,2.44,4.28V619l-4.89,7s-1.22-3.36,0,5.81L281.6,641l.92,7-2.45,12.84-1.22,7.64L273,675.84l-6.72,5.5L262,691.74l-3.37,3.67h-16.2l-5.81,2.44-16.82-11.92-3.66-.31h-4.59l-10.09,9.79-4.89,2.44-.92-6.11-1.83-4-1.23-11.92-6.42-6.42-4.58,4-4.89,2.75-3.06,6.42-1.84,4.9L168.48,689l-5.5-.31-5.5-5.5L150.75,689l-8.87,4-7.95,2.75-9.47-.92-4,1.53-8.25-9.17-5.81-9.78-8.26-9.48v-7l-2.44-3.06-5.51,3.36-2.44,1.23-4-2.45H76.46l-9.18-5.81-1.52-4.58,3.36-5.2v-11l-1.84-5.2,1.53-6.42.61-5.5v-4l-3.66-5.2v-10.4l-3.67-8.25-3.67-5.5v-4.28l-9.79-11.47-3.05-12.38-4.89-.92.91-9.17,9.17.61,9.79,2.45,5.5-2,5.81-2.92H78l3.37-1.23,1.83-.92,2.45,1.84,1.22,1.53h8.56l4.59-1.22,8-.62,4.58,2.45H118s7-2.75,10.08-2.14,3.67-7,3.67-7v-4.59l-2.25-6.11-4.47-1.53-3.37-5.5-1.22-7.34,2.75.3,4,.61,3.67,1.23,3.36-6.42h9.48s1.53,1.53,3.36-.92a21.15,21.15,0,0,1,4.59-4.28l.91-5.5v-8.87L152,482l3.67-3.05.31-4.89-2.14-3.67-3.06-2.45.92-8.25,2.14-5.81,2.75-11.62Z" />
+                </g>
+            </svg>
+        </div>
+        
+        <div class="flex flex-col justify-start w-full md:w-auto">
+            <h1 class="text-white font-bold mb-3">
+                <i class="fa-solid fa-caret-right mr-8"></i> Cliquez sur la zone à afficher
+            </h1>
+            <div class="inline-flex items-center">
+                <span class="size-2 inline-block bg-red-500 rounded-full me-2"></span>
+                <span class="text-white dark:text-neutral-400 font-bold">Kananga (chef-lieu)</span>
+            </div>
+            <div class="inline-flex items-center">
+                <span class="size-2 inline-block bg-green-500 rounded-full me-2"></span>
+                <span class="text-white dark:text-neutral-400">Demba</span>
+            </div>
+            <div class="inline-flex items-center">
+                <span class="size-2 inline-block bg-blue-600 rounded-full me-2 dark:bg-blue-500"></span>
+                <span class="text-white dark:text-neutral-400">Dimbelenge</span>
+            </div>
+            <div class="inline-flex items-center">
+                <span class="size-2 inline-block bg-indigo-500 rounded-full me-2"></span>
+                <span class="text-white dark:text-neutral-400">Dibaya</span>
+            </div>
+            <div class="inline-flex items-center">
+                <span class="size-2 inline-block bg-purple-500 rounded-full me-2"></span>
+                <span class="text-white dark:text-neutral-400">Kazumba</span>
+            </div>
+            <div class="inline-flex items-center">
+                <span class="size-2 inline-block bg-yellow-500 rounded-full me-2"></span>
+                <span class="text-white dark:text-neutral-400">Luiza</span>
+            </div>
+        </div>
+    
+        <section id="info" class="w-full md:w-auto mt-4 md:mt-0 min-h-64 max-w-full md:max-w-md rounded-lg bg-gray-50 p-4 sm:p-8">
+            <h1 class="font-bold text-xl mb-4">Informations sur la Subdivision</h1>
+            <header class="flex gap-4 p-2">
+              <img src="images/bg/kanan.webp" alt="" class="w-24 f-24 rounded-lg">
+              <button type="button" class="m-1 ms-0 font-bold relative w-full h-full py-3 px-4 inline-flex items-center gap-x-2 text-lg rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+                Kananga
+                <span class="flex absolute top-0 end-0 size-3 -mt-1.5 -me-1.5">
+                  <span class="animate-ping absolute inline-flex size-full rounded-full bg-red-400 opacity-75 dark:bg-red-600"></span>
+                  <span class="relative inline-flex rounded-full size-3 bg-red-500"></span>
+                </span>
+              </button>
+            </header>
+            <div id="info" class="flex w-full justify-around items-center gap-2 mt-4">
+              <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500">
+                <i class="fa-solid fa-up-down-left-right"></i>
+                8825 km<sup>2</sup>
+              </span>
+              <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500">
+                <i class="fa-solid fa-person"></i>
+                1 225 370 hab.
+              </span>
+              <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500">
+                <span class="size-1.5 inline-block rounded-full bg-blue-800 dark:bg-blue-500"></span>
+                5 secteurs
+              </span>
+            </div>
+            <div>
+              <div class="hs-accordion-group">
+                <div class="hs-accordion active" id="hs-basic-with-arrow-heading-one">
+                  <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 hover:text-gray-500 focus:outline-hidden focus:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="true" aria-controls="hs-basic-with-arrow-collapse-one">
+                    <svg class="hs-accordion-active:hidden block size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="m6 9 6 6 6-6"></path>
+                    </svg>
+                    <svg class="hs-accordion-active:block hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="m18 15-6-6-6 6"></path>
+                    </svg>
+                    Secteurs/commandes
+                  </button>
+                  <div id="hs-basic-with-arrow-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-arrow-heading-one">
+                    <ul class="max-w-xs flex flex-col divide-y divide-gray-200 dark:divide-neutral-700">
+                      <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+                        Kananga
+                      </li>
+                      <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+                        Katoka
+                      </li>
+                      <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+                        Lukonga
+                      </li>
+                      <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+                        Ndesha
+                      </li>
+                      <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+                        Nganza
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+    
+                <div class="hs-accordion" id="hs-basic-with-arrow-heading-two">
+                  <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 hover:text-gray-500 focus:outline-hidden focus:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="false" aria-controls="hs-basic-with-arrow-collapse-two">
+                    <svg class="hs-accordion-active:hidden block size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="m6 9 6 6 6-6"></path>
+                    </svg>
+                    <svg class="hs-accordion-active:block hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="m18 15-6-6-6 6"></path>
+                    </svg>
+                    Aéroports
+                  </button>
+                  <div id="hs-basic-with-arrow-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-arrow-heading-two">
+                    <ul class="max-w-xs flex flex-col divide-y divide-gray-200 dark:divide-neutral-700">
+                      <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+                        <a href="google.com?q=Aéroport de Kananga (Kananga Airport)">Aéroport de Kananga (Kananga Airport)</a>
+                      </li>
+                      <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+                        Coordonnées : 5°54′00″ S, 22°28′09″ E
+                      </li>
+                      <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+                        Longueur de piste : ~2 200 m ≈ 7 218 ft
+                      </li>
+                      <li class="inline-flex flex-col items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+                        <span class="font-bold">Compagnies</span>
+                        <ul class="list-disc pl-5">
+                          <li><a href="google.com?q=Compagnie Africaine d’Aviation (flyCAA)">Compagnie Africaine d’Aviation (flyCAA)</a></li>
+                          <li><a href="google.com?q=Congo Airways"></a>Congo Airways</li>
+                          <li><a href="google.com?q=Ethiopian Airlines selon certaines sources"></a>Ethiopian Airlines selon certaines sources</li>
+                        </ul>
+                      </li>
+                      <li class="inline-flex flex-col items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+                        <span class="font-bold">Destinations</span>
+                        <ul class="list-disc pl-5">
+                          <li><a href="">Kinshasa (FIH) : 14-18 vols par mois</a></li>
+                          <li><a href="">Lubumbashi (FBM) : 3-4 vols par mois</a></li>
+                          <li><a href="">Kolwezi (KWZ) : quelques vols mensuels</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+    
+                <div class="hs-accordion" id="hs-basic-with-arrow-heading-three">
+                  <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 hover:text-gray-500 focus:outline-hidden focus:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="false" aria-controls="hs-basic-with-arrow-collapse-three">
+                    <svg class="hs-accordion-active:hidden block size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="m6 9 6 6 6-6"></path>
+                    </svg>
+                    <svg class="hs-accordion-active:block hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="m18 15-6-6-6 6"></path>
+                    </svg>
+                    Ports
+                  </button>
+                  <div id="hs-basic-with-arrow-collapse-three" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-arrow-heading-three">
+                    <p class="text-gray-800 dark:text-neutral-200">
+                      À Kananga même, il n’y a pas de port fluvial ou maritime. La ville est située à l’intérieur du pays, loin des principaux axes navigables.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+    </div>
+</div>
+<section
+  id="cartes"
+  class="fixed inset-0 z-50 pointer-events-auto overflow-y-auto bg-gray-900 p-4 sm:p-8 text-white opacity-0"
+  style="
+    background-color: #303030;
+    pointer-events: none;
+    font-family: 'Nunito', sans-serif;
+    "
+>
+  <div class="container mx-auto">
+    <h1 class="mb-4 text-xl font-bold md:text-2xl">
+      Kasaï-Central sous différents formats de carte
+    </h1>
+    <p class="text-gray-200 text-sm">Les cartes peuvent prendre un temps pour se charger</p>
+    <div
+      class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+    >
+      <article class="h-64 rounded-lg bg-gray-800 p-4 shadow-lg">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-lg font-semibold text-white">Carte Standard</h2>
+          <button
+            class="inline-flex items-center rounded-full bg-blue-600 px-4 py-2 text-sm text-white transition-colors hover:bg-white hover:text-blue-600"
+          >
+            <i class="fa-solid fa-expand mr-2"></i>
+            <span class="hidden md:inline">Agrandir</span>
+          </button>
+        </div>
+        <div id="standard-map" class="h-64 w-full rounded-lg bg-gray-700"></div>
+      </article>
+
+      <article class="h-64 rounded-lg bg-gray-800 p-4 shadow-lg">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-lg font-semibold text-white">Vue satellite</h2>
+          <button
+            class="inline-flex items-center rounded-full bg-blue-600 px-4 py-2 text-sm text-white transition-colors hover:bg-white hover:text-blue-600"
+          >
+            <i class="fa-solid fa-expand mr-2"></i>
+            <span class="hidden md:inline">Agrandir</span>
+          </button>
+        </div>
+        <div
+          id="satellite-map"
+          class="h-64 w-full rounded-lg bg-gray-700"
+        ></div>
+      </article>
+
+      <article class="h-64 rounded-lg bg-gray-800 p-4 shadow-lg">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-lg font-semibold text-white">
+            Carte Hydrographique
+          </h2>
+          <button
+            class="inline-flex items-center rounded-full bg-blue-600 px-4 py-2 text-sm text-white transition-colors hover:bg-white hover:text-blue-600"
+          >
+            <i class="fa-solid fa-expand mr-2"></i>
+            <span class="hidden md:inline">Agrandir</span>
+          </button>
+        </div>
+        <div
+          id="hydrographic-map"
+          class="h-64 w-full rounded-lg bg-gray-700"
+        ></div>
+      </article>
+
+      <article class="h-64 rounded-lg bg-gray-800 p-4 shadow-lg">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-lg font-semibold text-white">
+            Carte Topographique
+          </h2>
+          <button
+            class="inline-flex items-center rounded-full bg-blue-600 px-4 py-2 text-sm text-white transition-colors hover:bg-white hover:text-blue-600"
+          >
+            <i class="fa-solid fa-expand mr-2"></i>
+            <span class="hidden md:inline">Agrandir</span>
+          </button>
+        </div>
+        <div
+          id="topographic-map"
+          class="h-64 w-full rounded-lg bg-gray-700"
+        ></div>
+      </article>
+    </div>
+  </div>
+</section>          
+      <button id="back-to-top"
+        class="w-15 h-15 rounded-full bg-blue-600 text-white z-69 flex items-center justify-center"
+        style="position: fixed; bottom: 20px; right: 20px;"><i class="fa-solid fa-arrow-up"></i></button>
+
+      <footer class="mt-auto bg-gray-900 w-full dark:bg-neutral-950">
+        <div class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
+
+          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+            <div class="col-span-full lg:col-span-1">
+              <img src="images/gouvernorat/logo.jpg" alt="logo-gouvernorat-kasai-central" class="w-60 rounded-lg">
+
+            </div>
+
+
+            <div class="col-span-1">
+              <h4 class="font-semibold text-gray-100">Liens rapides</h4>
+
+              <div class="mt-3 grid space-y-3">
+                         <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="gouvernorat.html">Gouvernorat</a></p>
+                        <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="agriculture.html">Agriculture</a></p>
+                        <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="infrastructures.html">Infrastructures</a></p>
+                        <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="histoire.html">Historique</a></p>
+                        <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="geo-kasai-central.html">Géographie</a></p>
+                        <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="demographie.html">Demographie</a></p>
+
+                        <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="tourisme.html">Tourisme</a></p>
+                        <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="galerie.html">Galerie</a></p>
+                        <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="sante.html">Santé</a></p>
+                        <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" href="education.html">Éducation</a></p>
+              </div>
+            </div>
+
+
+            <div class="col-span-1">
+              <h4 class="font-semibold text-gray-100">Contacts</h4>
+
+              <div class="mt-3 grid space-y-3">
+                <p><a
+                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                    href="#">+243 81 234 5678</a></p>
+                <p><a
+                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                    href="#">+243 81 234 5678</a></p>
+                <p><a
+                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                    href="#">@central.com</a></p>
+                <p><a
+                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-hidden focus:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                    href="#">g@kasai.com</a></p>
+              </div>
+            </div>
+
+
+            <div class="col-span-2">
+              <h4 class="font-semibold text-gray-100">Newsletter</h4>
+
+              <form method="post" action="newsletter.php">
+                <div
+                  class="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-white rounded-lg p-2 dark:bg-neutral-900">
+                  <div class="w-full">
+                    <label for="hero-input" class="sr-only">S'inscrire</label>
+                    <input type="text" id="hero-input" name="email"
+                      class="py-2.5 sm:py-3 px-4 block w-full border-transparent rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-transparent dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                      placeholder="Entrer votre email" required>
+                  </div>
+                  <button type="submit" name="submit"
+                    class="w-full sm:w-auto whitespace-nowrap p-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                    href="#">
+                    S'inscrire
+                  </button>
+                </div>
+                <p class="mt-3 text-sm text-gray-400">
+                  Recevez nos actualités et mises à jour directement dans votre boîte mail.
+                </p>
+              </form>
+            </div>
+
+          </div>
+
+
+          <div class="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
+            <div class="flex flex-wrap justify-between items-center gap-2">
+              <p class="text-sm text-gray-400 dark:text-neutral-400">
+                © 2025 kasai central.
+              </p>
+            </div>
+
+
+
+            <div>
+              <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-hidden focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
+                href="#">
+                <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg>
+              </a>
+              <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-hidden focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
+                href="#">
+                <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                </svg>
+              </a>
+              <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-hidden focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
+                href="#">
+                <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                </svg>
+              </a>
+              <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-hidden focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
+                href="#">
+                <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+              </a>
+              <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-hidden focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none"
+                href="#">
+                <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z" />
+                </svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/preline/dist/index.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    let carto = document.getElementById("carto");
+    let general = document.getElementById("general");
+    let cartes = document.getElementById("cartes");
+
+    carto.addEventListener("click", function () {
+      cartes.style.opacity = "1";
+      cartes.style.pointerEvents = "auto";
+      cartes.style.position = "relative";
+    });
+    general.addEventListener("click", function () {
+      cartes.style.opacity = "0";
+      cartes.style.pointerEvents = "none";
+      cartes.style.position = "absolute";
+    });
+    const kasaiCentral = [-6.15, 22.4];
+
+    const standardMap = L.map("standard-map").setView(kasaiCentral, 8);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(standardMap);
+
+    const satelliteMap = L.map("satellite-map").setView(kasaiCentral, 8);
+    L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
+      attribution: '&copy; <a href="https://www.esri.com/">Esri</a>, USGS, NOAA',
+    }).addTo(satelliteMap);
+
+    const hydrographicMap = L.map("hydrographic-map").setView(kasaiCentral, 8);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(hydrographicMap);
+    document.getElementById("hydrographic-map").style.filter = "contrast(1.2) hue-rotate(200deg)";
+
+    const topographicMap = L.map("topographic-map").setView(kasaiCentral, 8);
+    L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png", {
+      attribution: '&copy; <a href="https://opentopomap.org">OpenTopoMap</a> contributors',
+    }).addTo(topographicMap);
+  });
+
+
+</script>
+<script>
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+        const territoriesData = {
+      kananga: {
+        name: "Kananga",
+        area: "8 825 km²",
+        population: "1 225 370 hab.",
+        sectors: ["Kananga", "Katoka", "Lukonga", "Ndesha", "Nganza"],
+        airports: [
+          {
+            name: "Aéroport de Kananga (Kananga Airport)",
+            coords: "5°54′00″ S, 22°28′09″ E",
+            runway: "~2 200 m ≈ 7 218 ft",
+            companies: [
+              "Compagnie Africaine d’Aviation (flyCAA)",
+              "Congo Airways",
+              "Ethiopian Airlines selon certaines sources"
+            ],
+            destinations: [
+              "Kinshasa (FIH) : 14-18 vols par mois",
+              "Lubumbashi (FBM) : 3-4 vols par mois",
+              "Kolwezi (KWZ) : quelques vols mensuels"
+            ]
+          }
+        ],
+        ports: "À Kananga même, il n'y a pas de port fluvial ou maritime. La ville est située à l'intérieur du pays, loin des principaux axes navigables.",
+        image: "images/bg/kanan.webp"
+      },
+      demba: {
+        name: "Demba",
+        area: "847 km²",
+        population: "726 549 hab.",
+        sectors: ["Diofwa", "Mamba", "Lombelo", "Lusonge", "Muanza Ngoma", "Tshibungu"],
+        airports: [
+          {
+            name: "Aéroport de Kananga (Kananga Airport)",
+            coords: "5°54′00″ S, 22°28′09″ E",
+            runway: "~2 200 m ≈ 7 218 ft",
+            companies: [
+              "Compagnie Africaine d’Aviation (flyCAA)",
+              "Congo Airways",
+              "Ethiopian Airlines selon certaines sources"
+            ],
+            destinations: [
+              "Kinshasa (FIH) : 14-18 vols par mois",
+              "Lubumbashi (FBM) : 3-4 vols par mois",
+              "Kolwezi (KWZ) : quelques vols mensuels"
+            ]
+          }
+        ],
+        ports: "Pas de port fluvial majeur",
+        image: "images/bg/demba.jpg"
+      },
+      dimbelenge: {
+        name: "Dimbelenge",
+        area: "13 223 km²",
+        population: "541 048 hab.",
+        sectors: ["Lubi", "Lubudi", "Lukibu", "Kunduyi", "Mashala"],
+        airports: [
+          {
+            name: "Aéroport de Kananga (Kananga Airport)",
+            coords: "5°54′00″ S, 22°28′09″ E",
+            runway: "~2 200 m ≈ 7 218 ft",
+            companies: [
+              "Compagnie Africaine d’Aviation (flyCAA)",
+              "Congo Airways",
+              "Ethiopian Airlines selon certaines sources"
+            ],
+            destinations: [
+              "Kinshasa (FIH) : 14-18 vols par mois",
+              "Lubumbashi (FBM) : 3-4 vols par mois",
+              "Kolwezi (KWZ) : quelques vols mensuels"
+            ]
+          }
+        ],
+        ports: "Accès aux lacs Munkamba et Fwa pour la pêche",
+        image: "images/bg/dibaya.jpg"
+      },
+      dibaya: {
+        name: "Dibaya",
+        area: "8 601 km²",
+        population: "687 905 hab.",
+        sectors: ["Dibatayi", "Dibanda", "Kamuandu", "Kasangidi", "Tshishilu"],
+        airports: [
+          {
+            name: "Aéroport de Kananga (Kananga Airport)",
+            coords: "5°54′00″ S, 22°28′09″ E",
+            runway: "~2 200 m ≈ 7 218 ft",
+            companies: [
+              "Compagnie Africaine d’Aviation (flyCAA)",
+              "Congo Airways",
+              "Ethiopian Airlines selon certaines sources"
+            ],
+            destinations: [
+              "Kinshasa (FIH) : 14-18 vols par mois",
+              "Lubumbashi (FBM) : 3-4 vols par mois",
+              "Kolwezi (KWZ) : quelques vols mensuels"
+            ]
+          }
+        ],
+        ports: "Pas de port fluvial majeur",
+        image: "images/bg/dibaya.jpg"
+      },
+      kazumba: {
+        name: "Kazumba",
+        area: "12 881 km²",
+        population: "1 031 855 hab.",
+        sectors: ["Matamba", "Miao", "Kafuba", "Musuasua", "Mboyi", "Mbulungu", "Tshitadi", "Kavula", "Mutefu"],
+        airports: [
+          {
+            name: "Aéroport de Kananga (Kananga Airport)",
+            coords: "5°54′00″ S, 22°28′09″ E",
+            runway: "~2 200 m ≈ 7 218 ft",
+            companies: [
+              "Compagnie Africaine d’Aviation (flyCAA)",
+              "Congo Airways",
+              "Ethiopian Airlines selon certaines sources"
+            ],
+            destinations: [
+              "Kinshasa (FIH) : 14-18 vols par mois",
+              "Lubumbashi (FBM) : 3-4 vols par mois",
+              "Kolwezi (KWZ) : quelques vols mensuels"
+            ]
+          }
+        ],
+        ports: "Pas de port fluvial majeur",
+        image: "images/bg/kaz.jpeg"
+      },
+      luiza: {
+        name: "Luiza",
+        area: "14 702 km²",
+        population: "877 271 hab.",
+        sectors: ["Kalunga", "Lueta", "Kabelekese", "Lusanza", "Bambayi", "Luatshi", "Mbushimai"],
+        airports: [
+          {
+            name: "Aéroport de Kananga (Kananga Airport)",
+            coords: "5°54′00″ S, 22°28′09″ E",
+            runway: "~2 200 m ≈ 7 218 ft",
+            companies: [
+              "Compagnie Africaine d’Aviation (flyCAA)",
+              "Congo Airways",
+              "Ethiopian Airlines selon certaines sources"
+            ],
+            destinations: [
+              "Kinshasa (FIH) : 14-18 vols par mois",
+              "Lubumbashi (FBM) : 3-4 vols par mois",
+              "Kolwezi (KWZ) : quelques vols mensuels"
+            ]
+          }
+        ],
+        ports: "Pas de port fluvial majeur",
+        image: "images/bg/kaz.jpeg"
+      }
+    };
+
+        const infoSection = document.getElementById('info');
+
+        const defaultMessage = `
+        <div class="text-center py-12">
+            <i class="fas fa-map-marked-alt text-4xl text-gray-400 mb-4"></i>
+            <h3 class="text-xl font-semibold text-gray-600">Aucune information à afficher</h3>
+            <p class="text-gray-500 mt-2">Survolez ou cliquez sur un territoire de la carte pour afficher ses informations</p>
+        </div>
+    `;
+
+        infoSection.innerHTML = defaultMessage;
+
+        function updateInfo(territoryId) {
+      const data = territoriesData[territoryId];
+
+      if (!data) return;
+
+            const sectorsHTML = data.sectors.map(sector =>
+        `<li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+                ${sector}
+            </li>`
+      ).join('');
+
+            let airportsHTML = '<p class="text-gray-800 dark:text-neutral-200">Aucun aéroport majeur</p>';
+      if (data.airports.length > 0) {
+        const airport = data.airports[0];
+        const companiesHTML = airport.companies.map(company =>
+          `<li><a href="google.com?q=${encodeURIComponent(company)}">${company}</a></li>`
+        ).join('');
+
+        const destinationsHTML = airport.destinations.map(dest =>
+          `<li><a href="">${dest}</a></li>`
+        ).join('');
+
+        airportsHTML = `
+                <ul class="max-w-xs flex flex-col divide-y divide-gray-200 dark:divide-neutral-700">
+                    <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+                        <a href="google.com?q=${encodeURIComponent(airport.name)}">${airport.name}</a>
+                    </li>
+                    <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+                        Coordonnées : ${airport.coords}
+                    </li>
+                    <li class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+                        Longueur de piste : ${airport.runway}
+                    </li>
+                    <li class="inline-flex flex-col items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+                        <span class="font-bold">Compagnies</span>
+                        <ul class="list-disc pl-5">
+                            ${companiesHTML}
+                        </ul>
+                    </li>
+                    <li class="inline-flex flex-col items-center gap-x-2 py-3 px-4 text-sm font-medium text-gray-800 dark:text-white">
+                        <span class="font-bold">Destinations</span>
+                        <ul class="list-disc pl-5">
+                            ${destinationsHTML}
+                        </ul>
+                    </li>
+                </ul>
+            `;
+      }
+
+            const html = `
+            <h1 class="font-bold text-xl mb-4">Informations sur la Subdivision</h1>
+            <header class="flex gap-4 p-2"> 
+                <img src="${data.image}" alt="${data.name}" class="w-24 h-24 rounded-lg">
+                <button type="button" class="m-1 ms-0 font-bold relative w-full h-full py-3 px-4 inline-flex items-center gap-x-2 text-lg rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+                    ${data.name}
+                    <span class="flex absolute top-0 end-0 size-3 -mt-1.5 -me-1.5">
+                        <span class="animate-ping absolute inline-flex size-full rounded-full bg-red-400 opacity-75 dark:bg-red-600"></span>
+                        <span class="relative inline-flex rounded-full size-3 bg-red-500"></span>
+                    </span>
+                </button>
+            </header>
+            <div class="flex w-full justify-around items-center gap-2">
+                <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500">
+                    <i class="fa-solid fa-up-down-left-right"></i>
+                    ${data.area}
+                </span>
+                <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500">
+                    <i class="fa-solid fa-person"></i>
+                    ${data.population}
+                </span>
+                <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800/30 dark:text-blue-500">
+                    <span class="size-1.5 inline-block rounded-full bg-blue-800 dark:bg-blue-500"></span>
+                    ${data.sectors.length} secteurs
+                </span>
+            </div>
+            <div>
+                <div class="hs-accordion-group">
+                    <div class="hs-accordion active" id="hs-basic-with-arrow-heading-one">
+                        <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 hover:text-gray-500 focus:outline-hidden focus:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="true" aria-controls="hs-basic-with-arrow-collapse-one">
+                            <svg class="hs-accordion-active:hidden block size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                            <svg class="hs-accordion-active:block hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m18 15-6-6-6 6"></path>
+                            </svg>
+                            Secteurs/commandes
+                        </button>
+                        <div id="hs-basic-with-arrow-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-arrow-heading-one">
+                            <ul class="max-w-xs flex flex-col divide-y divide-gray-200 dark:divide-neutral-700">
+                                ${sectorsHTML}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="hs-accordion" id="hs-basic-with-arrow-heading-two">
+                        <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 hover:text-gray-500 focus:outline-hidden focus:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="false" aria-controls="hs-basic-with-arrow-collapse-two">
+                            <svg class="hs-accordion-active:hidden block size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                            <svg class="hs-accordion-active:block hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m18 15-6-6-6 6"></path>
+                            </svg>
+                            Aéroports
+                        </button>
+                        <div id="hs-basic-with-arrow-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-arrow-heading-two">
+                            ${airportsHTML}
+                        </div>
+                    </div>
+
+                    <div class="hs-accordion" id="hs-basic-with-arrow-heading-three">
+                        <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 py-3 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 hover:text-gray-500 focus:outline-hidden focus:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="false" aria-controls="hs-basic-with-arrow-collapse-three">
+                            <svg class="hs-accordion-active:hidden block size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                            <svg class="hs-accordion-active:block hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m18 15-6-6-6 6"></path>
+                            </svg>
+                            Ports
+                        </button>
+                        <div id="hs-basic-with-arrow-collapse-three" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-arrow-heading-three">
+                            <p class="text-gray-800 dark:text-neutral-200">
+                                ${data.ports}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+      infoSection.innerHTML = html;
+
+            setTimeout(() => {
+        if (window.HSAccordion) {
+          document.querySelectorAll('.hs-accordion').forEach(el => {
+            new HSAccordion(el);
+          });
+        }
+      }, 100);
+    }
+
+        document.querySelectorAll('.mono-path').forEach(path => {
+      const territoryId = path.id;
+
+            path.addEventListener('mouseenter', () => {
+        updateInfo(territoryId);
+      });
+
+            path.addEventListener('click', () => {
+        updateInfo(territoryId);
+      });
+    });
+
+        document.querySelectorAll('.inline-flex.items-center').forEach(legend => {
+      legend.addEventListener('click', function () {
+        const legendClass = Array.from(this.classList).find(cls => cls.startsWith('legend-'));
+        if (legendClass) {
+          const territoryId = legendClass.replace('legend-', '');
+          updateInfo(territoryId);
+
+                    const path = document.getElementById(territoryId);
+          if (path) {
+            path.classList.add('mono-path-hover');
+            setTimeout(() => path.classList.remove('mono-path-hover'), 2000);
+          }
+        }
+      });
+    });
+
+        document.querySelector('svg').addEventListener('mouseleave', () => {
+      if (!document.querySelector('.mono-path:hover')) {
+        infoSection.innerHTML = defaultMessage;
+      }
+    });
+  });
+
+
+    const backToTop = document.getElementById('back-to-top');
+  backToTop.style.display = 'none';
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      backToTop.style.display = 'block';
+    } else {
+      backToTop.style.display = 'none';
+    }
+  });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+
+  document.querySelectorAll('[data-hs-tab]').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('[data-hs-tab]').forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+    });
+  });
+
+
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-B73TDMXKF5');
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+        const fullscreenButtons = document.querySelectorAll('#cartes .fa-expand, #cartes .fa-compress');
+
+    fullscreenButtons.forEach(button => {
+      button.addEventListener('click', () => {
+                const mapContainer = button.closest('article').querySelector('.w-full');
+        if (!mapContainer) return;
+
+                const isFullscreen = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement;
+
+        if (!isFullscreen) {
+                    if (mapContainer.requestFullscreen) {
+            mapContainer.requestFullscreen();
+          } else if (mapContainer.webkitRequestFullscreen) {             mapContainer.webkitRequestFullscreen();
+          } else if (mapContainer.mozRequestFullScreen) {             mapContainer.mozRequestFullScreen();
+          }
+
+                    button.classList.remove('fa-expand');
+          button.classList.add('fa-compress');
+        } else {
+                    if (document.exitFullscreen) {
+            document.exitFullscreen();
+          } else if (document.webkitExitFullscreen) {             document.webkitExitFullscreen();
+          } else if (document.mozCancelFullScreen) {             document.mozCancelFullScreen();
+          }
+
+                    button.classList.remove('fa-compress');
+          button.classList.add('fa-expand');
+        }
+
+                const mapId = mapContainer.id;
+        const map = mapId === 'standard-map' ? standardMap :
+          mapId === 'satellite-map' ? satelliteMap :
+            mapId === 'hydrographic-map' ? hydrographicMap :
+              topographicMap;
+        setTimeout(() => {
+          map.invalidateSize();         }, 100);
+      });
+    });
+
+        document.addEventListener('fullscreenchange', updateFullscreenIcons);
+    document.addEventListener('webkitfullscreenchange', updateFullscreenIcons);
+    document.addEventListener('mozfullscreenchange', updateFullscreenIcons);
+
+    function updateFullscreenIcons() {
+      fullscreenButtons.forEach(button => {
+        const mapContainer = button.closest('article').querySelector('.w-full');
+        const isFullscreen = document.fullscreenElement === mapContainer ||
+          document.webkitFullscreenElement === mapContainer ||
+          document.mozFullScreenElement === mapContainer;
+        button.classList.toggle('fa-expand', !isFullscreen);
+        button.classList.toggle('fa-compress', isFullscreen);
+      });
+    }
+  });
+
+
+
+    window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    const scrollPosition = window.scrollY;
+
+        header.style.backgroundPositionY = -scrollPosition * 0.5 + 'px';
+
+        if (scrollPosition > 50) {
+      header.style.height = '95vh';
+    } else {
+      header.style.height = '100vh';
+    }
+  });
+
+
+    const pathLegendMap = {
+    kananga: 'legend-kananga',
+    demba: 'legend-demba',
+    dimbelenge: 'legend-dimbelenge',
+    dibaya: 'legend-dibaya',
+    kazumba: 'legend-kazumba',
+    luiza: 'legend-luiza'
+  };
+    const legendLabels = [
+    { selector: '.inline-flex .bg-red-500', legendClass: 'legend-kananga' },
+    { selector: '.inline-flex .bg-green-500', legendClass: 'legend-demba' },
+    { selector: '.inline-flex .bg-blue-600', legendClass: 'legend-dimbelenge' },
+    { selector: '.inline-flex .bg-indigo-500', legendClass: 'legend-dibaya' },
+    { selector: '.inline-flex .bg-purple-500', legendClass: 'legend-kazumba' },
+    { selector: '.inline-flex .bg-yellow-500', legendClass: 'legend-luiza' }
+  ];
+  legendLabels.forEach(({ selector, legendClass }) => {
+    const badge = document.querySelector(selector);
+    if (badge && badge.parentElement) {
+      badge.parentElement.classList.add(legendClass);
+      badge.parentElement.style.cursor = 'pointer';
+    }
+  });
+
+    Object.entries(pathLegendMap).forEach(([pathId, legendClass]) => {
+    const path = document.getElementById(pathId);
+    const legend = document.querySelector('.' + legendClass);
+
+    if (path && legend) {
+            path.addEventListener('mouseenter', () => {
+        legend.style.fontWeight = 'bold';
+      });
+      path.addEventListener('mouseleave', () => {
+        legend.style.fontWeight = '';
+      });
+
+            legend.addEventListener('mouseenter', () => {
+        path.classList.add('mono-path-hover');
+      });
+      legend.addEventListener('mouseleave', () => {
+        path.classList.remove('mono-path-hover');
+      });
+    }
+  });
+
+</script>
+</body>
+
+</html>

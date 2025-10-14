@@ -1,0 +1,389 @@
+/* Supprimer les styles Bootstrap inutiles (car vous utilisez Preline) */
+.carousel, .carousel-item, .carousel-inner {
+  /* Commenter ou supprimer pour éviter les conflits */
+  /*
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: red;
+  */
+}
+
+/* Simplifier .imghero pour l'overlay */
+.imghero.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay transparent */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+}
+
+/* Styles pour le carrousel Preline */
+.hs-carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.hs-carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Styles pour le texte */
+.text-content {
+  position: absolute;
+  z-index: 40;
+  color: rgb(157, 193, 255);
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Améliore la lisibilité */
+}
+
+
+
+/* S'assurer que le texte est bien stylé */
+.text-content h1,
+.text-content h4,
+.text-content p {
+  color: white !important; /* Forcer la couleur blanche */
+  opacity: 1 !important; /* S'assurer que le texte n'est pas masqué */
+}
+
+/* Conserver les autres styles existants */
+.body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu-link {
+  position: relative;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 2px 0;
+}
+
+.menu-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  transition: width 0.3s ease;
+}
+
+.menu-link:hover::after {
+  width: 100%;
+}
+
+.menu-link:hover {
+  background: rgba(34, 72, 197, 0.05);
+  border: 1px solid rgb(11, 1, 158);
+}
+
+.dropdown-background {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(34, 197, 94, 0.1);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hs-dropdown-open .hs-dropdown-menu {
+  animation: slideDown 0.3s ease;
+}
+
+/* Supprimer les réinitialisations globales inutiles */
+.bootstrap-container {
+  all: initial;
+}
+
+.bootstrap-container * {
+  all: unset;
+  box-sizing: border-box;
+}
+/* Style des boutons de navigation */
+.swiper-button-prev, .swiper-button-next {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Style de la pagination */
+.swiper-pagination-bullet {
+  background: gray;
+  opacity: 0.6;
+}
+.swiper-pagination-bullet-active {
+  background: white;
+  opacity: 1;
+}
+/* Styles pour l'overlay */
+.imghero.overlay {
+  background-color: rgba(0, 0, 0, 0.749);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 30;
+}
+
+/* Styles pour le texte */
+.text-content {
+  position: absolute;
+  z-index: 40;
+  color: white;
+}
+
+/* S'assurer que le texte est visible */
+.text-content h1,
+.text-content h4,
+.text-content p {
+  color: white !important;
+  opacity: 1 !important;
+}
+
+/* Styles pour le carrousel Swiper */
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: kenburns 15s ease infinite;
+}
+@keyframes kenburns {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.imghero.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+  animation: overlayFade 15s ease infinite;
+}
+@keyframes overlayFade {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.6; }
+}
+.text-content a {
+  transition: all 0.3s ease;
+}
+.text-content a:hover {
+  transform: translateY(-2px);
+}
+.text-content a {
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.text-content a:hover {
+  transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+  .text-content h1 {
+    font-size: 2rem; /* Réduire de lg:text-7xl à 2rem */
+  }
+  .text-content h4 {
+    font-size: 1.25rem; /* Réduire de text-2xl */
+  }
+  .text-content p {
+    font-size: 0.875rem;
+  }
+}
+.text-content {
+  transform: translateZ(0);
+  transition: transform 0.5s ease;
+}
+.swiper-slide-active ~ .text-content {
+  transform: translateY(-10px);
+}
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 0.7;
+}
+.swiper-pagination-bullet-active {
+  background: yellow;
+  opacity: 1;
+}
+.rotation{
+  transform: rotate(180px);
+}
+
+        @keyframes scaleIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-scale-in {
+            animation: scaleIn 0.8s ease-out forwards;
+        }
+        
+        .animate-slide-left {
+            animation: slideInLeft 0.7s ease-out forwards;
+        }
+        
+        .animate-slide-right {
+            animation: slideInRight 0.7s ease-out forwards;
+        }
+        
+        .animate-fade-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        
+        .loading-bar {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .loading-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.8), transparent);
+            animation: loading 2s infinite;
+        }
+        
+        @keyframes loading {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        
+        .bg-congo-gradient {
+            background: linear-gradient(135deg, #3B82F6 0%, #EF4444 35%, #F59E0B 70%);
+        }
+        
+        .text-congo-blue { color: #1E40AF; }
+        .text-congo-red { color: #DC2626; }
+        .text-congo-yellow { color: #D97706; }
+        .bg-congo-blue { background-color: #3B82F6; }
+        .bg-congo-red { background-color: #EF4444; }
+        .bg-congo-yellow { background-color: #F59E0B; }
+        
+        /* Toggle Switch Styles */
+        .toggle-switch {
+            position: relative;
+            width: 60px;
+            height: 30px;
+            background: #CBD5E0;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .toggle-switch.active {
+            background: #3B82F6;
+        }
+        
+        .toggle-slider {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .toggle-switch.active .toggle-slider {
+            transform: translateX(30px);
+        }
+
+  .overlay-before::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.696); /* noir semi-transparent */
+  border-radius: 0.75rem; /* même radius que Tailwind rounded-xl */
+  z-index: 0;
+  transition: all ease-in-out 0.3s;
+}
+.item:hover::before {
+  background-color: rgba(0, 0, 0, 0.788);
+}
+
+.item:hover .ct_projets{
+  width: 100%;
+  padding: 10px;
+  background-color: blue;
+  justify-content: end;
+  transition: all ease-in-out 0.3s;
+  border-radius: 10px;
+}
